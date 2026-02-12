@@ -21,5 +21,7 @@ build/
 *.obj
 *.exe
 *.lib
+*.dll
+*.exp
 *.ilk
 *.pdb
