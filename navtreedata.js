@@ -26,14 +26,19 @@ var NAVTREE =
 [
   [ "Worksheet5", "index.html", [
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"adder_8h_source.html"
+"adder_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
