@@ -1,3 +1,11 @@
+/**
+ * @file adder.h
+ * @brief Declarations for the maths library functions.
+ *
+ * This header declares the exported functions from the maths library used by the calc program.
+ */
+
+
 // begin - adder.h
 
 #ifndef MATHSLIB_ADDER_H
@@ -24,6 +32,15 @@
 #endif
 
 // prototype for the function including additional keyword
+
+/**
+ * @brief Add two integers.
+ *
+ * @param a The first integer.
+ * @param b The second integer.
+ * @return The sum of a and b.
+ */
+
 MATHSLIBAPI int add(int a, int b);
 
 #endif
