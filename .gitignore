@@ -3,3 +3,13 @@
 *.o
 *.so
 build/
+
+# WS4 CMake build outputs
+Worksheet4/**/build/
+Worksheet4/**/CMakeFiles/
+Worksheet4/**/CMakeCache.txt
+Worksheet4/**/cmake_install.cmake
+Worksheet4/**/*.sln
+Worksheet4/**/*.vcxproj*
+Worksheet4/**/Debug/
+Worksheet4/**/Release/
