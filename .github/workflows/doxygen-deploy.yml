@@ -4,12 +4,12 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   deploy-worksheet5:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,12 +17,20 @@ jobs:
       - name: Install Doxygen
         run: sudo apt-get update && sudo apt-get install -y doxygen
 
+      # Debug: show where we are and what's inside
+      - name: Debug paths
+        run: |
+          pwd
+          ls -la
+          ls -la Worksheet5
+          ls -la Worksheet5/Doxyfile
+
       - name: Run Doxygen
         working-directory: Worksheet5
         run: doxygen Doxyfile
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.6.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: Worksheet5/html
